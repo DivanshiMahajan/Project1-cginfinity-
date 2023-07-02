@@ -1,10 +1,29 @@
 body {
     margin: 0;
     padding: 0;
+}
+    .heading{
+    /* background-image: url(https://t3.ftcdn.net/jpg/04/26/37/18/360_F_426371877_jGyegFYEcXrgkc6zMrwbjkJlducr7z8h.jpg); */
+   
+   background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    text-align: center;
+    
+    
+   
+    
+
+  
   }
   
+  
   .navbar {
-    background-color: #888;
+    background-color:#D8D8D8;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -14,7 +33,7 @@ body {
   }
   
   .navbar:hover {
-    background-color:rgb(112, 184, 207);
+    background-color:#B0C4DE;
   }
   
   .navbar a {
@@ -38,41 +57,22 @@ body {
   .logo img {
     display: block;
   }
-  .background-image {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-   
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.content{
-   
-    width: 100%;
-    height: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: black;
-      font-size: 36px;
-      max-width: 120%;
-}
-      btn{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    
-    
-    
-}
-
+  
 
 aside{
     float:right;
+}
+table{
+  border-collapse:collapse;
+  width:100%;
+}
+th,td{
+  text-align: left;
+  padding:8px;
+}
+th{
+  background-color: lightskyblue;
+}
+table,th,td{
+  border:2px solid black;
 }

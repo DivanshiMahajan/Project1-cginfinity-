@@ -76,3 +76,43 @@ th{
 table,th,td{
   border:2px solid black;
 }
+
+
+</html>
+CSS (styles.css):
+
+c
+
+/* Media queries */
+@media (max-width: 768px) {
+  /* Styles for small screens (up to 768px) */
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for medium screens (769px to 1024px) */
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Styles for large screens (1025px and above) */
+  body {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}

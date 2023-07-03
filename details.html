@@ -15,20 +15,47 @@
   }
     </script>
     <style>
-        .container{
-            margin: 0 80px;
-        }
-        @keyframes fade-in{
-            0%{
-                opacity:0;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-        tr {
-  animation: fade-in 0.5s ease-in-out;
-}
+       .card {
+      width: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      
+    }
+    
+    .card-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      background-color: #ccc;
+      /* background-image: url('https://media.licdn.com/dms/image/D4D03AQGNa023t38o9Q/profile-displayphoto-shrink_800_800/0/1680121159488?e=1694044800&v=beta&t=Yhzay-N7aoo-oxeaArI7mOzadzB4VPPCOuVKOPdydsg'); */
+      background-size: cover;
+      background-position: center;
+    
+    }
+
+
+    
+    .card-line {
+      border-top: 1px solid #ccc;
+      margin: 10px 0;
+    }
+    
+    .card-content {
+      margin-top: 10px;
+    }
+    
+    .linkedin-logo {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    h4{
+        text-align: center;
+    }
 
     </style>
 </head>
@@ -52,67 +79,194 @@
        <div style="text-align: center;">
     <h1>Employee Details</h1>
     </div>
-    <div class="container">
-    <table align="center" border="1" cellspacing="0" cellpadding="5" >
-        <tr>
-            <th>Employee Name</th>
-            <th>Post</th>
-            <th>Years of Experience</th>
-            <th>Address</th>
-        </tr>
-        <tr>
-            <td>Sebastian Labrador</td>
-            <td>VP of delivery for CG infinity</td>
-            <td>15</td>
-            <td>Texas</td>
-        </tr>
-        <tr>
-            <td>Bill Wachel</td>
-            <td>Technology CISO SVP</td>
-            <td>20</td>
-            <td>Texas</td>
-            
-        </tr>
-        <tr>
-            <td>Jeremy Leonard</td>
-            <td>Digital Marketing</td>
-            <td>16</td>
-            <td>Texas</td>
-        </tr>
-        <tr>
-            <td>Reed Hein</td>
-            <td>Recruiter</td>
-            <td>15</td>
-            <td>Kansas</td>
-        </tr>
-        <tr>
-            
-            <td>Tanya Shepherd</td>
-            <td>VP of delivery</td>
-            <td>12</td>
-            <td>Texas</td>
-        </tr>
-        <tr>
-            
-            <td>Terrence George</td>
-            <td>Global IT project lead</td>
-            <td>17</td>
-            <td>Hyderabad</td>
-        </tr>
-        <tr>
-            
-            <td>Kaden</td>
-            <td>developer</td>
-            <td>18</td>
-            <td>New Mexico</td>
-        </tr>
+    <div style="display: flex; flex-direction: row; justify-content: space-between;margin: 30px;">
+      <div class="card" style="background-color: lightskyblue;">
+        <div class="card-image"  style="background-image:url('https://media.licdn.com/dms/image/D4D03AQGNa023t38o9Q/profile-displayphoto-shrink_200_200/0/1680121159488?e=1694044800&v=beta&t=jjabKXtEvJgtnBkBo59WO7GbX_ABKA0nR77Hs-5nbzE') ;"></div>
+        <h4>Divanshi Mahajan</h4>
+        <h4>Intern</h4>
         
+        <hr class="card-line">
+        <div>
+            <a href="https://www.linkedin.com/in/divanshi-mahajan-519669214/">
+                <img class="linkedin-logo" src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=1696464000&v=beta&t=pnRD4zw--0l4sUkmQ5jJEyA_N6HOVuj-oo_yFYezoks" alt="LinkedIn Logo">
+              </a>
+          <span class="card-content">
+            <!-- Your content goes here -->
+            A passionate and driven individual with a diverse educational background and a strong foundation in public speaking.
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image" style="background-image: url('https://media.licdn.com/dms/image/D4D03AQHZGw2BXYiu-A/profile-displayphoto-shrink_100_100/0/1687363376992?e=1694044800&v=beta&t=1z5Y44xeLkMipk9nn2GwXD_Dbi5sHxx9BafvU2FS5tQ');"></div>
+        <h4>Bhoomika Mittal</h4>
+        <h4>Intern</h4>
         
+        <hr class="card-line">
+        <div>
+            <a href="https://www.linkedin.com/in/bhoomika-mittal-261384146/">
+                <img class="linkedin-logo" src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=1696464000&v=beta&t=pnRD4zw--0l4sUkmQ5jJEyA_N6HOVuj-oo_yFYezoks" alt="LinkedIn Logo">
+              </a>
+          <span class="card-content">
+            <!-- Your content goes here -->
+            A dedicated software enthusiast,ability to solve problems as well as to keep a team together.
+          </span>
+        </div>
+      </div>
+      <div class="card" style="background-color: lightskyblue;">
+        <div class="card-image" style="background-image: url('https://media.licdn.com/dms/image/D4D03AQHdpdP-OYEPuQ/profile-displayphoto-shrink_200_200/0/1678813006832?e=1694044800&v=beta&t=9jRWfkj2JfywwSxQ96uRNRyQ7RdmsJopB-afaY2BO9U');"></div>
+        <h4>
+            Sanchit Arora
+        </h4>
+        <h4>Intern</h4>
         
-        <!-- Add more rows for other employees -->
-    </table>
-    </div>
-    <hr>
+        <hr class="card-line">
+        <div>
+            <a href="https://www.linkedin.com/in/sanchit-arora0809/">
+                <img class="linkedin-logo" src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=1696464000&v=beta&t=pnRD4zw--0l4sUkmQ5jJEyA_N6HOVuj-oo_yFYezoks" alt="LinkedIn Logo">
+              </a>
+          <span class="card-content">
+            <!-- Your content goes here -->
+            Passionate and driven individual with a desire to make a positive impact. Strong problem solving skills and a quick learner.
+          </span>
+        </div>
+      </div>
+      </div>
+    
+    
+    
+      <div style="display: flex; flex-direction: row; justify-content: space-between;margin: 30px;">
+        <div class="card" style="background-color: lightskyblue;">
+          <div class="card-image" style="background-image: url(https://media.licdn.com/dms/image/D4D03AQH0nMWO3XZo7w/profile-displayphoto-shrink_200_200/0/1670651549881?e=1694044800&v=beta&t=rM4Wdad1aK_t0zQh_c1oCU2Y4supxHuGJiRVb7DsklQ);"></div>
+          <h4>Nidhi</h4>
+          <h4>Intern</h4>
+          
+          <hr class="card-line">
+          <div>
+              <a href="https://www.linkedin.com/in/nidhi-rawat-46326a257/">
+                  <img class="linkedin-logo" src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=1696464000&v=beta&t=pnRD4zw--0l4sUkmQ5jJEyA_N6HOVuj-oo_yFYezoks" alt="LinkedIn Logo">
+                </a>
+            <span class="card-content">
+              <!-- Your content goes here -->
+              Passionate and about implementing and launching new projects with innovative ideas and Committed to delivering high-quality work
+            </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="background-image: url(https://media.licdn.com/dms/image/D4E03AQH47JzMQmnMZA/profile-displayphoto-shrink_200_200/0/1687795212416?e=1694044800&v=beta&t=22nO1UFEcX9JDdld_F3pTjvgpqvNjZI94p0xyXSrZJw);"></div>
+          <h4>Sana Gupta</h4>
+          <h4>Intern</h4>
+          
+          <hr class="card-line">
+          <div>
+              <a href="https://www.linkedin.com/in/sana-gupta-758841248/">
+                  <img class="linkedin-logo" src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=1696464000&v=beta&t=pnRD4zw--0l4sUkmQ5jJEyA_N6HOVuj-oo_yFYezoks" alt="LinkedIn Logo">
+                </a>
+            <span class="card-content">
+              <!-- Your content goes here -->
+              A meticulous and organized individual working as a software developer intern at CG Infinity, Noida.
+            </span>
+          </div>
+        </div>
+        <div class="card" style="background-color: lightskyblue;">
+          <div class="card-image" style="background-image: url('https://media.licdn.com/dms/image/D4D03AQEeEKk7jRVAKg/profile-displayphoto-shrink_200_200/0/1687947011306?e=1694044800&v=beta&t=WK_40mZ4cLCDyfLdKLI_-s6FVd9GGYBU6kxKWiy3LsA');"></div>
+          <h4>Sidhant Mishra</h4>
+          <h4>Intern</h4>
+          
+          <hr class="card-line">
+          <div>
+              <a href="https://www.linkedin.com/in/siddhant-mishra-98617422b/">
+                  <img class="linkedin-logo" src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=1696464000&v=beta&t=pnRD4zw--0l4sUkmQ5jJEyA_N6HOVuj-oo_yFYezoks" alt="LinkedIn Logo">
+                </a>
+            <span class="card-content">
+              <!-- Your content goes here -->
+              A fast learner having good problem solving skills, carrying positive vibes and do any work with great energy and confidence.
+            </span>
+          </div>
+        </div>
+        </div>
+    
+        
+    
+        <div style="display: flex; flex-direction: row; justify-content: space-between;margin: 30px;">
+            <div class="card" style="background-color: lightskyblue;">
+              <div class="card-image" style="background-image: url(https://media.licdn.com/dms/image/C4D03AQFbjbhBGi3MRA/profile-displayphoto-shrink_200_200/0/1652689044603?e=1694044800&v=beta&t=K2kIfMJU6zTuDygSflfcYugc7K1aGLQRxJtpFZLNPdI);"></div>
+              
+                <h4>Aashna Sharma</h4>
+                <h4>Intern</h4>
+             
+              
+              <hr class="card-line">
+              <div>
+                  <a href="https://www.linkedin.com/in/aashna-sharma-398b47213/">
+                      <img class="linkedin-logo" src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=1696464000&v=beta&t=pnRD4zw--0l4sUkmQ5jJEyA_N6HOVuj-oo_yFYezoks" alt="LinkedIn Logo">
+                    </a>
+                <span class="card-content">
+                  <!-- Your content goes here -->
+                  Ambitious and results-oriented professional with a keen eye for detail,continuously seeking opportunities to expand knowledge and expertise.
+                </span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image" style="background-image: url('https://media.licdn.com/dms/image/D4D03AQFVgt9oXHl9Hg/profile-displayphoto-shrink_200_200/0/1687683079011?e=1694044800&v=beta&t=x6QB357tLUvYZ-5WImbSzLqVXkJpNlcm0AqapFTUHrc');"></div>
+              <h4>Harleen Kaur</h4>
+              <h4>Intern</h4>
+              
+              <hr class="card-line">
+              <div>
+                  <a href="https://www.linkedin.com/in/harleen-kaur-chadha/">
+                      <img class="linkedin-logo" src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=1696464000&v=beta&t=pnRD4zw--0l4sUkmQ5jJEyA_N6HOVuj-oo_yFYezoks" alt="LinkedIn Logo">
+                    </a>
+                <span class="card-content">
+                  <!-- Your content goes here -->
+                  A hard-working and passionate Computer Science Engineering student with strong organizational and communication skills
+                  
+                </span>
+              </div>
+            </div>
+            <div class="card" style="background-color: lightskyblue;">
+              <div class="card-image" style="background-image: url('https://media.licdn.com/dms/image/D4D03AQEu7SLfYro4DA/profile-displayphoto-shrink_200_200/0/1668576992244?e=1694044800&v=beta&t=W067mU-whvExGkXkYqMK6YTTCwqIKfExN9hwrC39y3g');"></div>
+              <h4>Jashan Singla</h4>
+              <h4>Intern</h4>
+              
+              <hr class="card-line">
+              <div>
+                  <a href="https://www.linkedin.com/in/jashandeep-singla-01a3b9251/">
+                      <img class="linkedin-logo" src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831589865?e=1696464000&v=beta&t=pnRD4zw--0l4sUkmQ5jJEyA_N6HOVuj-oo_yFYezoks" alt="LinkedIn Logo">
+                    </a>
+                <span class="card-content">
+                  <!-- Your content goes here -->
+                  Effective communicator with a natural ability to build relationships and collaborate with diverse teams
+                </span>
+              </div>
+            </div>
+            </div>
+          
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 <h2 style="text-align: center;">Where to find Us?</h2>
     <div style="margin: 20px;display:flex;">
         <div style="margin: 20px;">
@@ -126,7 +280,7 @@
   </div>
 </div>
 
-<div class="container-fluid my-5 >
+<div class="container-fluid mt-5 >
     <!-- Footer -->
     <footer
             class=" fixed-bottom text-lg-start text-dark"

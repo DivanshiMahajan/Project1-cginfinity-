@@ -23,10 +23,15 @@
   // event.preventDefault(); // Prevent form submission
 
   // Perform login validation here 
+  
 
   // Redirect to another page upon successful login
   window.location.href = "details.html";
 });
+
+
+
+
 
 
   
@@ -130,7 +135,8 @@
         
                 <!-- <button onchange="window.location.href=details.html">Login</button> -->
                 <div style="display: flex;flex-direction: row; justify-content: space-between;">
-                <button type="submit">Login</button>
+                <!-- <button type="submit">Login</button> -->
+                <button type="submit" onclick="validateForm()">Login</button>
                 <button onclick="cancel()">Cancel</button>
                 </div>
               </form>

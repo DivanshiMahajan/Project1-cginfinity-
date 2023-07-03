@@ -14,6 +14,46 @@
       window.location.href = "home.html"; // Replace "home.html" with the actual home page URL
     }
   }
+  function validateForm(event) {
+  event.preventDefault(); // Prevent form submission if validation fails
+
+  // Get form inputs
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var confirmPassword = document.getElementById("confirmPassword").value;
+  var gender = document.getElementById("gender").value;
+  var address = document.getElementById("address").value;
+
+  // Validate name (should not be empty)
+  if (name.trim() === "") {
+    alert("Please enter your name.");
+    return;
+  }
+
+  // Validate email (should be a valid email address)
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  // Validate password (should be 4 characters long)
+  if (password.length !== 4) {
+    alert("Password should be 4 characters long.");
+    return;
+  }
+
+  // Validate password and confirm password (should match)
+  if (password !== confirmPassword) {
+    alert("Passwords do not match.");
+    return;
+  }
+
+  // All validations passed, you can submit the form
+  document.getElementById("registrationForm").submit();
+}
+
     </script>
     <style>
       body {
@@ -153,7 +193,7 @@
     
             <div class="form-buttons">
               <!-- <button onclick="window.location.href='details.html'">Register</button> -->
-              <button onclick="reset">Register</button>
+              <button  onclick="validateForm(event)">Register</button>
               <button type="button" onclick="cancelRegistration()">Cancel</button>
             </div>
           </form>

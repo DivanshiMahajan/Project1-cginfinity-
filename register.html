@@ -49,10 +49,11 @@
     alert("Passwords do not match.");
     return;
   }
+}
 
   // All validations passed, you can submit the form
-  document.getElementById("registrationForm").submit();
-}
+ document.getElementById("registrationForm").submit();
+
 
     </script>
     <style>
@@ -213,6 +214,7 @@
     
         function cancelRegistration() {
           registrationForm.reset();
+          window.location.href="home.html";
         }
         
       </script>
